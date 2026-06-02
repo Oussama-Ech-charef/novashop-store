@@ -36,6 +36,14 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+    /* product page  */
+
+   .products-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 
@@ -240,6 +248,23 @@
     }
 
     .social-icons {
+
+        justify-content: center;
+    }
+
+    /* product page  */
+
+     .page-banner h1 {
+
+        font-size: 2.2rem;
+    }
+
+    .products-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .category-filters {
 
         justify-content: center;
     }

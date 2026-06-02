@@ -1,0 +1,175 @@
+/* PAGE BANNER */
+
+.page-banner {
+
+    padding: 80px 0;
+
+    text-align: center;
+
+    background-color: var(--white-color);
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-banner h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+.page-banner p {
+
+    color: var(--gray-color);
+}
+
+
+/* PRODUCTS PAGE */
+
+.products-page {
+
+    padding: 80px 0;
+}
+
+
+/* TOOLBAR */
+
+.products-toolbar {
+
+    margin-bottom: 50px;
+}
+
+.products-toolbar input {
+
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 12px;
+
+    outline: none;
+
+    margin-bottom: 25px;
+
+    font-size: 1rem;
+}
+
+
+/* CATEGORY FILTERS */
+
+.category-filters {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.category-filters button {
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background-color: var(--white-color);
+
+    border: 1px solid var(--border-color);
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.category-filters button:hover {
+
+    background-color: var(--primary-color);
+
+    color: white;
+}
+
+.category-filters .active {
+
+    background-color: var(--primary-color);
+
+    color: white;
+}
+
+
+/* PRODUCTS GRID */
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+
+    background-color: var(--white-color);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border-color);
+
+    transition: var(--transition);
+}
+
+.product-card:hover {
+
+    transform: translateY(-10px);
+}
+
+.product-card img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.product-card:hover img {
+
+    transform: scale(1.05);
+}
+
+.product-info {
+
+    padding: 20px;
+}
+
+.product-info h3 {
+
+    margin-bottom: 10px;
+}
+
+.product-info p {
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.product-info .btn {
+
+    width: 100%;
+
+    text-align: center;
+}
