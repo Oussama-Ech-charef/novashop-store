@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "MacBook Pro M4",
+    "price": 1999,
+    "category": "Laptops",
+    "image": "assets/images/products/macbook.png"
+  },
+  {
+    "id": 2,
+    "name": "iPhone 16 Pro",
+    "price": 1199,
+    "category": "Smartphones",
+    "image": "assets/images/products/iphone.png"
+  },
+  {
+    "id": 3,
+    "name": "Apple Watch Ultra",
+    "price": 799,
+    "category": "Watches",
+    "image": "assets/images/products/watch.png"
+  },
+  {
+    "id": 4,
+    "name": "AirPods Pro",
+    "price": 249,
+    "category": "Headphones",
+    "image": "assets/images/products/airpods.png"
+  },
+  {
+    "id": 5,
+    "name": "Logitech MX Keys",
+    "price": 129,
+    "category": "Accessories",
+    "image": "assets/images/products/keyboard.png"
+  },
+  {
+    "id": 6,
+    "name": "Dell XPS 15",
+    "price": 1799,
+    "category": "Laptops",
+    "image": "assets/images/products/dell.png"
+  }
+]
