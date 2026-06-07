@@ -269,4 +269,16 @@
         justify-content: center;
     }
 
+
+     .product-details-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .product-details-info h1 {
+
+        font-size: 2rem;
+    }
 }
