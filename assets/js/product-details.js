@@ -55,7 +55,7 @@ function displayProduct(product) {
 
                 </p>
 
-                <button class="btn">
+                <button class="btn add-to-cart-btn">
                     Add To Cart
                 </button>
 
@@ -64,6 +64,30 @@ function displayProduct(product) {
         </div>
 
     `;
+    const addToCartBtn = document.querySelector(".add-to-cart-btn");
+
+        addToCartBtn.addEventListener("click", () => {
+
+            addToCart(product);
+
+        });
 }
 
 loadProduct();
+
+function addToCart(product) {
+
+    const cart = JSON.parse(
+        localStorage.getItem("cart")
+    ) || [];
+
+    cart.push(product);
+
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
+
+    alert("Product added to cart!");
+
+}
