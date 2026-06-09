@@ -76,18 +76,33 @@ function displayProduct(product) {
 loadProduct();
 
 function addToCart(product) {
-
     const cart = JSON.parse(
         localStorage.getItem("cart")
     ) || [];
 
-    cart.push(product);
+    const existingProduct = cart.find(item => item.id === product.id);
+
+    if (existingProduct) {
+        existingProduct.quantity = (existingProduct.quantity || 1) + 1;
+    } else {
+        product.quantity = 1;
+        cart.push(product);
+    }
 
     localStorage.setItem(
         "cart",
         JSON.stringify(cart)
     );
 
-    alert("Product added to cart!");
+    // Update global cart badge
+    if (typeof updateCartBadge === "function") {
+        updateCartBadge();
+    }
 
+    // Show stylish toast notification
+    if (typeof showToast === "function") {
+        showToast(`${product.name} added to cart!`);
+    } else {
+        alert(`${product.name} added to cart!`);
+    }
 }
