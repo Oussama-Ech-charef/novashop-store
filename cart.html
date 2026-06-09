@@ -9,6 +9,8 @@
 
     <title>NovaShop | Premium Tech Store</title>
 
+    <meta name="description" content="Review the premium tech devices in your shopping cart, manage quantities, and complete your purchase securely.">
+
     <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +26,7 @@
     <!-- Main CSS -->
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
@@ -40,7 +43,7 @@
                 NovaShop
             </a>
 
-            <!-- Desktop Navigation -->
+             <!-- Desktop Navigation -->
 
             <ul class="nav-links">
 
@@ -53,11 +56,11 @@
                 </li>
 
                 <li>
-                    <a href="#">Categories</a>
+                    <a href="products.html">Categories</a>
                 </li>
 
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
 
                 
@@ -74,8 +77,9 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                     
-                    <a href="cart.html">
+                    <a href="cart.html" class="cart-icon-wrapper">
                         <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count hidden">0</span>
                     </a>
                     
                     <div class="menu-toggle">
@@ -139,15 +143,15 @@
 
                     <ul>
 
-                        <li><a href="#">Laptops</a></li>
+                        <li><a href="products.html?category=Laptops">Laptops</a></li>
 
-                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="products.html?category=Smartphones">Smartphones</a></li>
 
-                        <li><a href="#">Headphones</a></li>
+                        <li><a href="products.html?category=Headphones">Headphones</a></li>
 
-                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="products.html?category=Watches">Smart Watches</a></li>
 
-                        <li><a href="#">Accessories</a></li>
+                        <li><a href="products.html?category=Accessories">Accessories</a></li>
 
                     </ul>
 
@@ -256,6 +260,56 @@
 
     </footer>
 
+    <!-- Checkout Modal Overlay -->
+    <div class="modal-overlay" id="checkout-modal-overlay">
+        <div class="checkout-modal">
+            <button class="close-modal-btn" id="close-modal-btn">&times;</button>
+            <div id="modal-content-area">
+                <h2 class="checkout-form-title">Checkout Details</h2>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="checkout-name">Full Name</label>
+                        <input type="text" id="checkout-name" required placeholder="e.g. John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-email">Email Address</label>
+                        <input type="email" id="checkout-email" required placeholder="e.g. john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-address">Shipping Address</label>
+                        <input type="text" id="checkout-address" required placeholder="e.g. 123 Main St">
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="checkout-city">City</label>
+                            <input type="text" id="checkout-city" required placeholder="e.g. New York">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-zip">Zip Code</label>
+                            <input type="text" id="checkout-zip" required placeholder="e.g. 10001">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-card">Card Number</label>
+                        <input type="text" id="checkout-card" required placeholder="1234 5678 1234 5678" pattern="\d{16}" title="Please enter a valid 16-digit card number">
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="checkout-expiry">Expiry Date</label>
+                            <input type="text" id="checkout-expiry" required placeholder="MM/YY" pattern="\d{2}/\d{2}" title="MM/YY format">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-cvv">CVV</label>
+                            <input type="password" id="checkout-cvv" required placeholder="123" pattern="\d{3}" title="3-digit CVV">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn checkout-submit-btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/search.js"></script>
     <script src="assets/js/cart.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
