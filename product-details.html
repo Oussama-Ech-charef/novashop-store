@@ -9,6 +9,8 @@
 
     <title>NovaShop | Premium Tech Store</title>
 
+    <meta name="description" content="Get full specifications, features, and pricing details for our high-quality premium tech products, and add them to your cart.">
+
     <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +43,7 @@
                 NovaShop
             </a>
 
-            <!-- Desktop Navigation -->
+             <!-- Desktop Navigation -->
 
             <ul class="nav-links">
 
@@ -54,11 +56,11 @@
                 </li>
 
                 <li>
-                    <a href="#">Categories</a>
+                    <a href="products.html">Categories</a>
                 </li>
 
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
 
                 
@@ -75,8 +77,9 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                     
-                    <a href="cart.html">
+                    <a href="cart.html" class="cart-icon-wrapper">
                         <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count hidden">0</span>
                     </a>
                     
                     <div class="menu-toggle">
@@ -131,21 +134,21 @@
 
             <div class="footer-container">
 
-                <div class="footer-column">
+                 <div class="footer-column">
 
                     <h3>Shop</h3>
 
                     <ul>
 
-                        <li><a href="#">Laptops</a></li>
+                        <li><a href="products.html?category=Laptops">Laptops</a></li>
 
-                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="products.html?category=Smartphones">Smartphones</a></li>
 
-                        <li><a href="#">Headphones</a></li>
+                        <li><a href="products.html?category=Headphones">Headphones</a></li>
 
-                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="products.html?category=Watches">Smart Watches</a></li>
 
-                        <li><a href="#">Accessories</a></li>
+                        <li><a href="products.html?category=Accessories">Accessories</a></li>
 
                     </ul>
 
@@ -256,6 +259,7 @@
 
 
 
+     <script src="assets/js/search.js"></script>
     <script src="assets/js/product-details.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
