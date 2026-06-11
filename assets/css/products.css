@@ -80,6 +80,8 @@
 
     border: 1px solid var(--border-color);
 
+    color: var(--secondary-color);
+
     cursor: pointer;
 
     transition: var(--transition);

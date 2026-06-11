@@ -146,7 +146,7 @@
     font-size: 0.95rem;
     font-family: inherit;
     color: var(--secondary-color);
-    background: #f8fafc;
+    background: var(--background-color);
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
@@ -157,12 +157,12 @@
 
 .form-group input:hover {
     border-color: #93c5fd;
-    background: #fff;
+    background: var(--white-color);
 }
 
 .form-group input:focus {
     border-color: var(--primary-color);
-    background: #ffffff;
+    background: var(--white-color);
     box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
 }
 
@@ -179,7 +179,7 @@
     font-size: 0.95rem !important;
     font-family: inherit !important;
     color: var(--secondary-color) !important;
-    background: #f8fafc !important;
+    background: var(--background-color) !important;
     outline: none !important;
     resize: vertical !important;
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease !important;
@@ -192,12 +192,12 @@
 
 #contact-message:hover {
     border-color: #93c5fd !important;
-    background: #fff !important;
+    background: var(--white-color) !important;
 }
 
 #contact-message:focus {
     border-color: var(--primary-color) !important;
-    background: #ffffff !important;
+    background: var(--white-color) !important;
     box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1) !important;
 }
 
