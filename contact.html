@@ -10,7 +10,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -29,48 +29,26 @@
 
     <header>
         <nav class="navbar container">
-            <a href="index.html" class="logo">
-                NovaShop
-            </a>
+            <a href="index.html" class="logo">NovaShop</a>
 
             <!-- Desktop Navigation -->
             <ul class="nav-links">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="products.html">Products</a>
-                </li>
-                <li>
-                    <a href="products.html">Categories</a>
-                </li>
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
                 <div class="nav-icons">
-                    <a href="#" class="search-toggle">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-
-                    <a href="#" class="theme-toggle-btn" title="Toggle Theme">
-                        <i class="fa-solid fa-moon"></i>
-                    </a>
-                    
+                    <a href="#" class="search-toggle"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="theme-toggle-btn" title="Toggle Theme"><i class="fa-solid fa-moon"></i></a>
                     <a href="cart.html" class="cart-icon-wrapper">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span class="cart-count hidden">0</span>
                     </a>
-                    
-                    <div class="menu-toggle">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
+                    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
                 </div>
             </div>
         </nav>
@@ -86,35 +64,35 @@
         <section class="page-banner">
             <div class="container">
                 <h1>Contact Us</h1>
-                <p>We'd love to hear from you.</p>
+                <p>We're here to help. Send us a message or reach out directly.</p>
             </div>
         </section>
 
-        <section class="container">
+        <section class="container contact-section">
             <div class="contact-layout">
                 
                 <!-- Left Column: Form -->
-                <div class="contact-form-container">
-                    <h2>Send Us a Message</h2>
+                <div class="contact-form-wrapper">
+                    <h2>Send a Message</h2>
                     <form id="contact-form-el">
                         <div class="form-group">
-                            <label for="contact-name">Your Name</label>
-                            <input type="text" id="contact-name" required placeholder="e.g. John Doe">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" required placeholder="John Doe">
                         </div>
                         
                         <div class="form-group">
                             <label for="contact-email">Email Address</label>
-                            <input type="email" id="contact-email" required placeholder="e.g. john@example.com">
+                            <input type="email" id="contact-email" required placeholder="john@example.com">
                         </div>
 
                         <div class="form-group">
                             <label for="contact-subject">Subject</label>
-                            <input type="text" id="contact-subject" required placeholder="e.g. Order Inquiry">
+                            <input type="text" id="contact-subject" required placeholder="Order Inquiry">
                         </div>
                         
                         <div class="form-group">
                             <label for="contact-message">Message</label>
-                            <textarea id="contact-message" required placeholder="How can we help you?" rows="6"></textarea>
+                            <textarea id="contact-message" required placeholder="How can we help you?" rows="5"></textarea>
                         </div>
                         
                         <button type="submit" class="btn contact-submit-btn">Send Message</button>
@@ -122,48 +100,45 @@
                 </div>
 
                 <!-- Right Column: Info Panel -->
-                <div class="contact-info-panel">
+                <div class="contact-info-wrapper">
+                    <h2>Get in Touch</h2>
                     
-                    <div class="contact-info-card">
+                    <div class="info-item">
                         <i class="fa-solid fa-location-dot"></i>
-                        <div class="contact-info-details">
-                            <h4>Our Storefront</h4>
-                            <p>100 Premium Avenue, Tech Plaza, Suite 404, New York, NY 10001</p>
+                        <div class="info-details">
+                            <h4>Storefront Address</h4>
+                            <p>100 Premium Avenue, Suite 404<br>New York, NY 10001</p>
                         </div>
                     </div>
 
-                    <div class="contact-info-card">
+                    <div class="info-item">
                         <i class="fa-solid fa-phone"></i>
-                        <div class="contact-info-details">
-                            <h4>Phone Support</h4>
-                            <p>+1 (555) 123-4567<br><span class="hours-note">Mon - Fri, 9am - 6pm EST</span></p>
+                        <div class="info-details">
+                            <h4>Phone Number</h4>
+                            <p>+1 (555) 123-4567<br><span class="hours-note">Mon - Fri, 9:00 AM - 6:00 PM EST</span></p>
                         </div>
                     </div>
 
-                    <div class="contact-info-card">
+                    <div class="info-item">
                         <i class="fa-solid fa-envelope"></i>
-                        <div class="contact-info-details">
-                            <h4>Email Enquiries</h4>
+                        <div class="info-details">
+                            <h4>Email</h4>
                             <p>support@novashop.com<br>info@novashop.com</p>
                         </div>
                     </div>
 
-                    <!-- Mock Map -->
-                    <div class="map-placeholder">
-                        <img src="assets/images/storefront_map.png" alt="Map Storefront Locator">
-                        <div class="map-card-overlay">
-                            <i class="fa-solid fa-location-pin"></i>
-                            <span>NovaShop New York HQ</span>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
+
+            <!-- Wider Map -->
+            <div class="map-container">
+                <img src="assets/images/storefront_map.png" alt="Map Storefront Locator">
+            </div>
+
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer-light">
         <div class="container">
             <div class="footer-container">
                 <div class="footer-column">
@@ -184,13 +159,7 @@
                         <li><a href="#">Our Story</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li>
-                    <a href="about.html">About Us</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
@@ -205,42 +174,20 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
-                    <h3>Legal</h3>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms Of Service</a></li>
-                        <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Security</a></li>
-                    </ul>
-                </div>
-
                 <div class="footer-column footer-brand">
                     <h2>NovaShop</h2>
-                    <p>
-                        Discover premium technology products, modern devices and high-quality accessories.
-                    </p>
+                    <p>Discover premium technology products, modern devices and high-quality accessories.</p>
                     <div class="social-icons">
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>
-                    © 2026 NovaShop. All Rights Reserved.
-                </p>
+                <p>© 2026 NovaShop. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -270,4 +217,3 @@
 </body>
 
 </html>
-
