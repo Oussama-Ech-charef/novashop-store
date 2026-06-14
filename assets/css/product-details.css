@@ -20,18 +20,12 @@
 
 .product-details-image img {
     width: 100%;
-    border-radius: 24px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
     background: var(--white-color);
-    padding: 20px;
+    padding: 16px;
     object-fit: contain;
-    max-height: 500px;
-    transition: transform var(--transition);
-}
-
-.product-details-image:hover img {
-    transform: scale(1.02);
+    max-height: 480px;
 }
 
 .product-details-info {
@@ -39,22 +33,22 @@
 }
 
 .product-details-info h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 10px;
-    letter-spacing: -0.5px;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .product-category-tag {
     display: inline-block;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
-    color: var(--primary-color);
-    font-size: 0.85rem;
-    font-weight: 600;
-    padding: 6px 16px;
-    border-radius: 50px;
-    margin-bottom: 15px;
+    background: var(--background-color);
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 14px;
 }
 
 .product-rating-badge {
@@ -89,21 +83,19 @@
 
 .product-details-info .add-to-cart-btn {
     width: auto;
-    padding: 16px 40px;
-    font-weight: 700;
-    font-size: 1.05rem;
-    box-shadow: 0 10px 20px -3px rgba(37, 99, 235, 0.3);
+    padding: 12px 32px;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 /* ---- Tabs Styles ---- */
 
 .product-tabs-container {
-    margin-top: 80px;
+    margin-top: 60px;
     border: 1px solid var(--border-color);
-    border-radius: 20px;
+    border-radius: 6px;
     background-color: var(--white-color);
     overflow: hidden;
-    box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.03);
 }
 
 .tabs-header {
@@ -206,8 +198,8 @@
 .reviews-summary-card {
     background-color: var(--background-color);
     border: 1px solid var(--border-color);
-    border-radius: 16px;
-    padding: 30px;
+    border-radius: 6px;
+    padding: 28px;
 }
 
 .reviews-summary-card h3 {
@@ -286,21 +278,21 @@
 .form-group-sm input,
 .form-group-sm textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 10px 12px;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 0.9rem;
     background-color: var(--white-color);
     color: var(--secondary-color);
     outline: none;
-    transition: var(--transition);
+    transition: border-color 0.2s;
     font-family: inherit;
 }
 
 .form-group-sm input:focus,
 .form-group-sm textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    box-shadow: 0 0 0 1px var(--primary-color);
 }
 
 .btn-sm {
@@ -329,15 +321,14 @@
 
 .review-card {
     border: 1px solid var(--border-color);
-    border-radius: 16px;
-    padding: 24px;
+    border-radius: 6px;
+    padding: 20px 24px;
     background-color: var(--white-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-    transition: transform 0.2s ease;
+    transition: border-color 0.2s ease;
 }
 
 .review-card:hover {
-    transform: translateY(-2px);
+    border-color: var(--primary-color);
 }
 
 .review-header {
@@ -371,13 +362,12 @@
 /* ---- Related Products ---- */
 
 .related-products-section {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .related-title {
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
-    margin-bottom: 40px;
-    letter-spacing: -0.5px;
+    margin-bottom: 32px;
 }
